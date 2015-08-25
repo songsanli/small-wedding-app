@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="weddingApp">
+    <ion-nav-view>
+    </ion-nav-view>
+    <script id="templates/home.html" type="text/ng-template">
+      <ion-view>
+        <ion-content class="padding">
+          <p>
+            <a class="button icon icon-right ion-chevron-right" href="#/lection">主题经文</a>
+          </p>
+          <p>
+            <a class="button icon icon-right ion-chevron-right" href="#/timelocation">时间地址</a>
+          </p>
+          <p>
+            <a class="button icon icon-right ion-chevron-right" href="#/thanks">特别鸣谢</a>
+          </p>
+          <p>
+            <a class="button icon icon-right ion-chevron-right" href="#/photos">照片欣赏</a>
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+    <script id="templates/lection.html" type="text/ng-template">
+      <ion-view>
+        <ion-content class="padding">
+          <p>
+            主题经文
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+    <script id="templates/timelocation.html" type="text/ng-template">
+      <ion-view>
+        <ion-content class="padding">
+          <p>
+            时间地址
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+    <script id="templates/thanks.html" type="text/ng-template">
+      <ion-view>
+        <ion-content class="padding">
+          <p>
+            特别鸣谢
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+    <script id="templates/photos.html" type="text/ng-template">
+      <ion-view>
+        <ion-content class="padding">
+          <p>
+            照片欣赏
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+  </body>
+</html>
