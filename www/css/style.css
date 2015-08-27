@@ -13,11 +13,11 @@
 }
 
 .background-light {
-  background-image: url('../img/background-light.jpg');
+  background-image: url('../img/background-light.png');
 }
 
 .background-dark {
-  background-image: url('../img/background-dark.png.jpg');
+  background-image: url('../img/background-dark.png');
 }
 
 .photo-wall-container {
@@ -32,4 +32,22 @@
   width: 90px;
   height: 90px;
   margin: 1%;
+}
+
+.photo-detail-wrapper{
+  display: flex;
+  align-items:center;
+}
+
+.photo-detail{
+  width: 100%;
+}
+
+.go-back-btn{
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
 }

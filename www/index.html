@@ -1,99 +1,101 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
-
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
-
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
-
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
-
     <!-- your app's js -->
     <script src="js/app.js"></script>
-  </head>
-  <body ng-app="weddingApp">
+</head>
+
+<body ng-app="weddingApp">
     <ion-nav-view>
     </ion-nav-view>
     <script id="templates/home.html" type="text/ng-template">
-      <ion-view>
-        <ion-content class="padding">
-          <p>
-            <a class="button icon icon-right ion-chevron-right" href="#/lection">主题经文</a>
-          </p>
-          <p>
-            <a class="button icon icon-right ion-chevron-right" href="#/timelocation">时间地址</a>
-          </p>
-          <p>
-            <a class="button icon icon-right ion-chevron-right" href="#/thanks">特别鸣谢</a>
-          </p>
-          <p>
-            <a class="button icon icon-right ion-chevron-right" href="#/photos">照片欣赏</a>
-          </p>
-        </ion-content>
-      </ion-view>
+        <ion-view>
+            <ion-content class="padding">
+                <p>
+                    <a class="button icon icon-right ion-chevron-right" href="#/lection">主题经文</a>
+                </p>
+                <p>
+                    <a class="button icon icon-right ion-chevron-right" href="#/timelocation">时间地址</a>
+                </p>
+                <p>
+                    <a class="button icon icon-right ion-chevron-right" href="#/thanks">特别鸣谢</a>
+                </p>
+                <p>
+                    <a class="button icon icon-right ion-chevron-right" href="#/photos">照片欣赏</a>
+                </p>
+            </ion-content>
+        </ion-view>
     </script>
     <script id="templates/lection.html" type="text/ng-template">
-      <ion-view>
-        <img src="img/Invetation-c.jpg" height="100%" width="100%">
-      </ion-view>
+        <ion-view>
+            <ion-slide-box on-slide-changed="slideHasChanged($index)" show-pager="false">
+                <ion-slide>
+                    <img src="img/Invetation-c.jpg" height="100%" width="100%">
+                </ion-slide>
+                <ion-slide>
+                    <img src="img/Invetation-e.jpg" class="fullPage">
+                </ion-slide>
+            </ion-slide-box>
+        </ion-view>
     </script>
     <script id="templates/timelocation.html" type="text/ng-template">
-      <ion-view>
-        <img src="img/workflow.jpg" height="100%" width="100%">
-      </ion-view>
+        <ion-view>
+            <ion-slide-box on-slide-changed="slideHasChanged($index)" show-pager="false">
+                <ion-slide>
+                    <div class="fullPage fullBackground background-light">
+                        <img src="img/timepositionCover.png" class="fullPage">
+                    </div>
+                </ion-slide>
+                <ion-slide>
+                    <img src="img/workflow.jpg" class="fullPage">
+                </ion-slide>
+            </ion-slide-box>
+        </ion-view>
     </script>
     <script id="templates/thanks.html" type="text/ng-template">
-      <ion-view>
-        <img src="img/thanks2.png" class="fullPage">
-      </ion-view>
+        <ion-view>
+            <ion-slide-box on-slide-changed="slideHasChanged($index)" show-pager="false">
+                <ion-slide>
+                    <img src="img/thanks1.png" class="fullPage">
+                </ion-slide>
+                <ion-slide>
+                    <img src="img/thanks2.png" class="fullPage">
+                </ion-slide>
+            </ion-slide-box>
+        </ion-view>
     </script>
     <script id="templates/photos.html" type="text/ng-template">
-      <ion-view>
-        <div class="fullPage fullBackground background-light">
-          <ion-content>
-            <div class="photo-wall-container">
-              <img src="img/avatars/00.png" class="photo-wall-avatar">
-              <img src="img/avatars/01.png" class="photo-wall-avatar">
-              <img src="img/avatars/02.png" class="photo-wall-avatar">
-              <img src="img/avatars/03.png" class="photo-wall-avatar">
-              <img src="img/avatars/04.png" class="photo-wall-avatar">
-              <img src="img/avatars/05.png" class="photo-wall-avatar">
-              <img src="img/avatars/06.png" class="photo-wall-avatar">
-              <img src="img/avatars/07.png" class="photo-wall-avatar">
-              <img src="img/avatars/08.png" class="photo-wall-avatar">
-              <img src="img/avatars/09.png" class="photo-wall-avatar">
-              <img src="img/avatars/10.png" class="photo-wall-avatar">
-              <img src="img/avatars/11.png" class="photo-wall-avatar">
-              <img src="img/avatars/12.png" class="photo-wall-avatar">
-              <img src="img/avatars/13.png" class="photo-wall-avatar">
-              <img src="img/avatars/14.png" class="photo-wall-avatar">
-              <img src="img/avatars/15.png" class="photo-wall-avatar">
-              <img src="img/avatars/16.png" class="photo-wall-avatar">
-              <img src="img/avatars/17.png" class="photo-wall-avatar">
-              <img src="img/avatars/18.png" class="photo-wall-avatar">
-              <img src="img/avatars/19.png" class="photo-wall-avatar">
-              <img src="img/avatars/20.png" class="photo-wall-avatar">
-              <img src="img/avatars/21.png" class="photo-wall-avatar">
-              <img src="img/avatars/22.png" class="photo-wall-avatar">
-              <img src="img/avatars/23.png" class="photo-wall-avatar">
-              <img src="img/avatars/24.png" class="photo-wall-avatar">
-              <img src="img/avatars/25.png" class="photo-wall-avatar">
-              <img src="img/avatars/26.png" class="photo-wall-avatar">
-              <img src="img/avatars/27.png" class="photo-wall-avatar">
+        <ion-view>
+            <div class="fullPage fullBackground background-light">
+                <ion-content>
+                    <div class="photo-wall-container">
+                        <img ng-repeat="i in photos" ng-src="img/avatars/{{i}}.png" class="photo-wall-avatar" ng-click="onImgClick(i)">
+                    </div>
+                </ion-content>
             </div>
-          </ion-content>
-        </div>
-      </ion-view>
+        </ion-view>
     </script>
-  </body>
+    <script id="templates/photo.html" type="text/ng-template">
+        <ion-view>
+            <img src="img/button.png" class= "go-back-btn" ng-click="closeModal()"></img>
+            <ion-scroll zooming="true" min-zoom="1" direction="xy" scrollbar-x="false" scrollbar-y="false" class="fullPage photo-detail-wrapper background-dark">
+                <img ng-src="img/photos/{{currentIndex}}.jpg" class="photo-detail">
+            </div>
+        </ion-view>
+    </script>
+</body>
+
 </html>
