@@ -1,1 +1,35 @@
-/* Empty. Add your own CSS if you like */
+.fullPage {
+  height: 100%;
+  width: 100%;
+}
+
+.fullBackground {
+  background: url() no-repeat center center fixed;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.background-light {
+  background-image: url('../img/background-light.jpg');
+}
+
+.background-dark {
+  background-image: url('../img/background-dark.png.jpg');
+}
+
+.photo-wall-container {
+  /* TODO: what about browser don't support flex? */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-wall-avatar {
+  width: 90px;
+  height: 90px;
+  margin: 1%;
+}
