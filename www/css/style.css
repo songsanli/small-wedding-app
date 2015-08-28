@@ -21,7 +21,8 @@
 }
 
 .photo-wall-container {
-  /* TODO: what about browser don't support flex? */
+  position: relative;
+  top: 60px !important;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -49,5 +50,14 @@
   width: 40px;
   top: 10px;
   left: 10px;
+  z-index: 1;
+}
+
+.go-back-btn-left{
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  margin-top: -20px;
   z-index: 1;
 }

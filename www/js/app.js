@@ -24,7 +24,7 @@ angular.module('weddingApp', ['ionic'])
             controller: 'photoController'
         });
 
-    $urlRouterProvider.otherwise("/photos");
+    $urlRouterProvider.otherwise("/home");
 })
 
 // I don't know whethe it's useful if I just need mobile web.
