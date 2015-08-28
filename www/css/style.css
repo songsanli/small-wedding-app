@@ -67,13 +67,14 @@
     width: -moz-calc(100% - 20px);
     position: absolute;
     bottom: 10px;
-    height: 48px;
+    height: 40px;
 }
 
 .main-container .bottom-nav-bar .button {
     background: black;
     opacity: 0;
     border: none;
+    min-height: 40px !important;
     height: 100%;
 }
 
