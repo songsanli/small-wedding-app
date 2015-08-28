@@ -61,18 +61,29 @@
     z-index: 1;
 }
 
-.bottom-nav-bar {
-    position: fixed;
-    bottom: 0;
-    height: 56px;
+.main-container .bottom-nav-bar {
+    width: calc(100% - 20px);
+    width: -webkit-calc(100% - 20px);
+    width: -moz-calc(100% - 20px);
+    position: absolute;
+    bottom: 10px;
+    height: 48px;
 }
 
-.bottom-nav-bar .button {
+.main-container .bottom-nav-bar .button {
     background: black;
     opacity: 0;
     border: none;
     height: 100%;
 }
-.bottom-nav-bar .button:active {
+
+.main-container .bottom-nav-bar .button:active {
   opacity: 0.4;
+}
+
+.main-container{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
 }
