@@ -1,63 +1,78 @@
 .fullPage {
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 .fullBackground {
-  background: url() no-repeat center center fixed;
-
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background: url() no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .background-light {
-  background-image: url('../img/background-light.png');
+    background-image: url('../img/background-light.png');
 }
 
 .background-dark {
-  background-image: url('../img/background-dark.png');
+    background-image: url('../img/background-dark.png');
 }
 
 .photo-wall-container {
-  position: relative;
-  top: 60px !important;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+    position: relative;
+    top: 60px !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .photo-wall-avatar {
-  width: 90px;
-  height: 90px;
-  margin: 1%;
+    width: 90px;
+    height: 90px;
+    margin: 1%;
 }
 
-.photo-detail-wrapper{
-  display: flex;
-  align-items:center;
+.photo-detail-wrapper {
+    display: flex;
+    align-items: center;
 }
 
-.photo-detail{
-  width: 100%;
+.photo-detail {
+    width: 100%;
 }
 
-.go-back-btn{
-  position: fixed;
-  height: 40px;
-  width: 40px;
-  top: 10px;
-  left: 10px;
-  z-index: 1;
+.go-back-btn {
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
 }
 
-.go-back-btn-left{
-  position: fixed;
-  height: 40px;
-  width: 40px;
-  top: 50%;
-  margin-top: -20px;
-  z-index: 1;
+.go-back-btn-left {
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    margin-top: -20px;
+    z-index: 1;
+}
+
+.bottom-nav-bar {
+    position: fixed;
+    bottom: 0;
+    height: 56px;
+}
+
+.bottom-nav-bar .button {
+    background: black;
+    opacity: 0;
+    border: none;
+    height: 100%;
+}
+.bottom-nav-bar .button:active {
+  opacity: 0.4;
 }

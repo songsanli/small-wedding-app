@@ -23,20 +23,13 @@
     </ion-nav-view>
     <script id="templates/home.html" type="text/ng-template">
         <ion-view>
-            <ion-content class="padding">
-                <p>
-                    <a class="button icon icon-right ion-chevron-right" ui-sref="lection">主题经文</a>
-                </p>
-                <p>
-                    <a class="button icon icon-right ion-chevron-right" href="#/timelocation">时间地址</a>
-                </p>
-                <p>
-                    <a class="button icon icon-right ion-chevron-right" href="#/thanks">特别鸣谢</a>
-                </p>
-                <p>
-                    <a class="button icon icon-right ion-chevron-right" href="#/photos">照片欣赏</a>
-                </p>
-            </ion-content>
+            <img src="img/main.jpg" class="fullPage">
+            <div class="button-bar bottom-nav-bar">
+                <div class="button" ui-sref="lection"></div>
+                <div class="button" ui-sref="timelocation"></div>
+                <div class="button" ui-sref="thanks"></div>
+                <div class="button" ui-sref="photos"></div>
+            </div>
         </ion-view>
     </script>
     <script id="templates/lection.html" type="text/ng-template">
