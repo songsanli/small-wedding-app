@@ -37,12 +37,12 @@
     <script id="templates/lection.html" type="text/ng-template">
         <ion-view>
             <a class="button button-clear go-back-btn-left icon ion-chevron-left" ng-click="$ionicGoBack()"></a>
-            <ion-slide-box on-slide-changed="slideHasChanged($index)" show-pager="false">
+            <ion-slide-box on-slide-changed="slideHasChanged($index)" show-pager="true" class="fullPage">
                 <ion-slide>
-                    <img src="img/Invetation-c.jpg" height="100%" width="100%">
+                    <div style="background-image: url(img/Invetation-c.jpg);" class="div-image fullPage"></div>
                 </ion-slide>
                 <ion-slide>
-                    <img src="img/Invetation-e.jpg" class="fullPage">
+                    <div style="background-image: url(img/Invetation-e.jpg);" class="div-image fullPage"></div>
                 </ion-slide>
             </ion-slide-box>
         </ion-view>
@@ -50,7 +50,7 @@
     <script id="templates/timelocation.html" type="text/ng-template">
         <ion-view>
             <img src="img/button.png" class="go-back-btn" ng-click="$ionicGoBack()"></img>
-            <ion-slide-box on-slide-changed="slideHasChanged($index)" show-pager="false">
+            <ion-slide-box class="fullPage slider-background-dark" on-slide-changed="slideHasChanged($index)" show-pager="true">
                 <ion-slide>
                     <div class="fullPage fullBackground background-light">
                         <img src="img/timepositionCover.png" class="fullPage">
@@ -65,33 +65,30 @@
     <script id="templates/thanks.html" type="text/ng-template">
         <ion-view>
             <a class="button button-clear go-back-btn-left icon ion-chevron-left" ng-click="$ionicGoBack()"></a>
-            <ion-slide-box on-slide-changed="slideHasChanged($index)" show-pager="false">
+            <ion-slide-box on-slide-changed="slideHasChanged($index)" show-pager="true" class="fullPage">
                 <ion-slide>
-                    <img src="img/thanks1.png" class="fullPage">
+                    <div style="background-image: url(img/thanks1.png);" class="div-image fullPage"></div>
                 </ion-slide>
                 <ion-slide>
-                    <img src="img/thanks2.png" class="fullPage">
+                    <div style="background-image: url(img/thanks2.png);" class="div-image fullPage"></div>
                 </ion-slide>
             </ion-slide-box>
         </ion-view>
     </script>
     <script id="templates/photos.html" type="text/ng-template">
-        <ion-view>
-            <div class="fullPage fullBackground background-light">
-                <img src="img/button.png" class="go-back-btn" ng-click="$ionicGoBack()"></img>
-                <ion-scroll>
-                    <div class="photo-wall-container">
-                        <img ng-repeat="i in photos" ng-src="img/avatars/{{i}}.png" class="photo-wall-avatar" ng-click="onImgClick(i)">
-                    </div>
-                </ion-scroll>
-            </div>
-            </div>
+        <ion-view class="fullBackground background-light">
+            <img src="img/button.png" class="go-back-btn" ng-click="$ionicGoBack()"></img>
+            <ion-scroll class="fullPage">
+                <div class="photo-wall-container">
+                    <img ng-repeat="i in photos" ng-src="img/avatars/{{i}}.png" class="photo-wall-avatar" ng-click="onImgClick(i)">
+                </div>
+            </ion-scroll>
         </ion-view>
     </script>
     <script id="templates/photo.html" type="text/ng-template">
-        <ion-view>
+        <ion-view class="fullBackground background-dark">
             <img src="img/button.png" class="go-back-btn" ng-click="closeModal()"></img>
-            <ion-scroll zooming="true" min-zoom="1" direction="xy" scrollbar-x="false" scrollbar-y="false" class="fullPage photo-detail-wrapper background-dark">
+            <ion-scroll zooming="true" min-zoom="1" direction="xy" scrollbar-x="false" scrollbar-y="false" class="fullPage photo-detail-wrapper ">
                 <img ng-src="img/photos/{{currentIndex}}.jpg" class="photo-detail">
                 </div>
         </ion-view>

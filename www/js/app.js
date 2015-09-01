@@ -41,7 +41,7 @@ angular.module('weddingApp', ['ionic'])
         });
     })
     .controller('photoController', ['$scope', '$ionicModal', function($scope, $ionicModal) {
-        $scope.photos = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27'];
+        $scope.photos = ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27'];
         $scope.onImgClick = function(index) {
             $scope.currentIndex = index;
             $ionicModal.fromTemplateUrl('templates/photo.html', {

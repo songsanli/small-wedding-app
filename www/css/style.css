@@ -22,16 +22,15 @@
 .photo-wall-container {
     position: relative;
     top: 60px !important;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    padding-left: 5%;
+    padding-right: 4%;
+    width: 100%;
 }
 
 .photo-wall-avatar {
-    width: 90px;
-    height: 90px;
-    margin: 1%;
+    width: 23%;
+    margin-right: 2%;
+    margin-bottom: 1%;
 }
 
 .photo-detail-wrapper {
@@ -86,5 +85,14 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  padding: 10px;
+}
+
+.div-image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-background-dark {
+  background-color: black;
 }
