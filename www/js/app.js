@@ -56,7 +56,7 @@ angular.module('weddingApp', ['ionic'])
             $scope.modal.hide();
         };
         $scope.$on('$destroy', function() {
-            $scope.modal.remove();
+            $scope.modal&&$scope.modal.remove();
         });
 
     }]);
