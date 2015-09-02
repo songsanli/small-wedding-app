@@ -23,7 +23,7 @@
     position: relative;
     top: 60px !important;
     padding-left: 5%;
-    padding-right: 4%;
+    padding-right: 3.2%;
     width: 100%;
 }
 
@@ -61,12 +61,10 @@
 }
 
 .main-container .bottom-nav-bar {
-    width: calc(100% - 20px);
-    width: -webkit-calc(100% - 20px);
-    width: -moz-calc(100% - 20px);
+    width: 100%;
     position: absolute;
-    bottom: 10px;
-    height: 40px;
+    bottom: 0;
+    height: 7.5%;
 }
 
 .main-container .bottom-nav-bar .button {

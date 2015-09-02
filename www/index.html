@@ -37,7 +37,7 @@
     <script id="templates/lection.html" type="text/ng-template">
         <ion-view>
             <a class="button button-clear go-back-btn-left icon ion-chevron-left" ng-click="$ionicGoBack()"></a>
-            <ion-slide-box on-slide-changed="slideHasChanged($index)" show-pager="true" class="fullPage">
+            <ion-slide-box on-slide-changed="slideHasChanged($index)" show-pager="false" class="fullPage">
                 <ion-slide>
                     <div style="background-image: url(img/Invetation-c.jpg);" class="div-image fullPage"></div>
                 </ion-slide>
@@ -50,7 +50,7 @@
     <script id="templates/timelocation.html" type="text/ng-template">
         <ion-view>
             <img src="img/button.png" class="go-back-btn" ng-click="$ionicGoBack()"></img>
-            <ion-slide-box class="fullPage slider-background-dark" on-slide-changed="slideHasChanged($index)" show-pager="true">
+            <ion-slide-box class="fullPage slider-background-dark" on-slide-changed="slideHasChanged($index)" show-pager="false">
                 <ion-slide>
                     <div class="fullPage fullBackground background-light">
                         <img src="img/timepositionCover.png" class="fullPage">
@@ -65,7 +65,7 @@
     <script id="templates/thanks.html" type="text/ng-template">
         <ion-view>
             <a class="button button-clear go-back-btn-left icon ion-chevron-left" ng-click="$ionicGoBack()"></a>
-            <ion-slide-box on-slide-changed="slideHasChanged($index)" show-pager="true" class="fullPage">
+            <ion-slide-box on-slide-changed="slideHasChanged($index)" show-pager="false" class="fullPage">
                 <ion-slide>
                     <div style="background-image: url(img/thanks1.png);" class="div-image fullPage"></div>
                 </ion-slide>
