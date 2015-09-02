@@ -34,12 +34,13 @@
 }
 
 .photo-detail-wrapper {
-    display: flex;
-    align-items: center;
 }
 
 .photo-detail {
-    width: 100%;
+    width: -moz-calc(100% - 4px);
+    width: -webkit-calc(100% - 4px);
+    width: -calc(100% - 4px); /* 5px is for .vl-helper */
+    vertical-align: middle;
 }
 
 .go-back-btn {
@@ -93,4 +94,14 @@
 
 .slider-background-dark {
   background-color: black;
+}
+
+.vl-helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.scroll {
+  height: 100%;
 }

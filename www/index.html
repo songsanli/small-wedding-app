@@ -89,8 +89,9 @@
         <ion-view class="fullBackground background-dark">
             <img src="img/button.png" class="go-back-btn" ng-click="closeModal()"></img>
             <ion-scroll zooming="true" min-zoom="1" direction="xy" scrollbar-x="false" scrollbar-y="false" class="fullPage photo-detail-wrapper ">
+                <span class="vl-helper"></span>
                 <img ng-src="img/photos/{{currentIndex}}.jpg" class="photo-detail">
-                </div>
+            </ion-scroll>
         </ion-view>
     </script>
 </body>
