@@ -42,6 +42,8 @@ angular.module('weddingApp', ['ionic'])
 //         });
 //  })
 .controller('homeController', ['$scope', '$ionicLoading', function ($scope, $ionicLoading) {
+    $scope.imagesLoaded = false;
+
     $ionicLoading.show({
 	    content: 'Loading Data',
 	    animation: 'fade-in',
@@ -52,6 +54,7 @@ angular.module('weddingApp', ['ionic'])
 
     imagesLoaded( document.querySelector('body'), function( instance ) {
         console.log('all images are loaded');
+        $scope.imagesLoaded = true;
         $ionicLoading.hide();
     });
 }])
