@@ -131,3 +131,7 @@
 .ion-record:before {
   color: #4E362C;
 }
+
+.preload {
+  display: none;
+}
