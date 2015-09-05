@@ -135,3 +135,9 @@
 .preload {
   display: none;
 }
+
+.ion-lazy-img svg{
+  height: 81px;
+  width: 81px !important;
+}
+

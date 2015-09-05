@@ -97,7 +97,7 @@
             <img src="img/button.png" class="go-back-btn" ng-click="$ionicGoBack()"></img>
             <ion-scroll class="fullPage">
                 <div class="photo-wall-container">
-                    <img ng-repeat="i in photos" ng-src="img/avatars/{{i}}.png" class="photo-wall-avatar" ng-click="onImgClick(i)">
+                    <ion-lazy-img ng-repeat="i in photos" img-url="img/avatars/{{i}}.png" class="photo-wall-avatar" img-click="onImgClick(i)"></ion-lazy-img>
                 </div>
             </ion-scroll>
         </ion-view>
