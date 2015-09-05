@@ -136,8 +136,9 @@
   display: none;
 }
 
-.ion-lazy-img svg{
+.ion-lazy-img svg {
   height: auto;
   width: 23% !important;
+  transform: scale(0.3);
 }
 
