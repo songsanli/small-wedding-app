@@ -137,7 +137,7 @@
 }
 
 .ion-lazy-img svg{
-  height: 81px;
-  width: 81px !important;
+  height: auto;
+  width: 23% !important;
 }
 

@@ -25,7 +25,7 @@ angular.module('weddingApp', ['ionic'])
                 controller: 'photoController'
             });
 
-        $urlRouterProvider.otherwise("/photos");
+        $urlRouterProvider.otherwise("/home");
     })
     .controller('homeController', ['$scope', '$ionicLoading', function($scope, $ionicLoading) {
         $scope.imagesLoaded = false;
@@ -78,7 +78,7 @@ angular.module('weddingApp', ['ionic'])
         link: function($scope, $element, $attrs) {
             $element.addClass('ion-lazy-img');
             var eClass=$attrs['class'];
-            $element.find('svg').addClass(eClass);
+            // $element.find('svg').addClass(eClass);
             var imgEl = $compile('<img src="{{imgUrl}}" class="ion-lazy-img"></img>')($scope);
             imgEl.addClass(eClass);
             imgEl.bind('click',function(e){
