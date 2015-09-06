@@ -149,3 +149,7 @@
 .pswp__img--placeholder {
   opacity: 0;
 }
+
+.slider-pager-page {
+    transform: scale(0.6);
+}
