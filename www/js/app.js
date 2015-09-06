@@ -188,6 +188,8 @@ angular.module('weddingApp', ['ionic'])
         options = {
 
             showHideOpacity: true,
+            preload: [1, 3],
+            hideAnimationDuration:0,
             // define gallery index (for URL)
             galleryUID: galleryElement.getAttribute('data-pswp-uid'),
 
@@ -200,8 +202,7 @@ angular.module('weddingApp', ['ionic'])
                 return {
                     x: rect.left,
                     y: rect.top + pageYScroll,
-                    w: rect.width,
-                    opacity: 0
+                    w: rect.width
                 };
             }
 

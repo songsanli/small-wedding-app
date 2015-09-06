@@ -100,7 +100,6 @@
     </script>
     <script id="templates/photos.html" type="text/ng-template">
         <ion-view class="fullBackground background-light">
-            <img src="img/button.png" class="go-back-btn" ng-click="$ionicGoBack()"></img>
             <ion-scroll class="fullPage">
                 <div class="photo-wall-container" itemscope itemtype="http://schema.org/ImageGallery" data-pswp-uid="1" ng-click="onGalleryClick($event)">
                     <figure ng-repeat="i in photos" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
